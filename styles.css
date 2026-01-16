@@ -134,17 +134,17 @@ button:active{
 }
 
 .result.upgrade{
-    background: linear-gradient(135deg, #109920 0%, #30aa50 100%);
-    color: white;
+    background: linear-gradient(135deg, #53f166 0%, #48fc78 100%);
+    color: black;
 }
 
 .result.wait{
-    background: linear-gradient(135deg, #e6d928 0%, #fded0f 100%);
-    color: white;
+    background: linear-gradient(135deg, #f5ee89 0%, #f3ea68 100%);
+    color: black;
 }
 
 .result.skip{
-    background: linear-gradient(135deg, #df2d2d 0%, #fa2323);
+    background: linear-gradient(135deg, #e27070 0%, #db4f4f);
 }
 
 .verdict{
