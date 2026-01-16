@@ -16,8 +16,27 @@
             <select id="deviceType">
                 <option value="phone">Phone</option>
                 <option value="pc">PC</option>
+                <option value="laptop">Laptop</option>
+                <option value="headphones">Headphones</option>
             </select>
         </div>
+
+        <div class="input-group">
+            <label>Device Age</label>
+            <div class="sliderContainer">
+                <input type="range" id="age" min="0" max="8" value="2" step="0.5">
+                <div class="sliderValue" id="ageValue">2 years</div>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Performance Satisfaction</label>
+            <div class="sliderContainer">
+                <input type="range" id="satisfaction" min="1" max="5" value="3">
+                <div class="sliderValue" id="satisfactionValue">3 - It's okay</div>
+            </div>
+        </div>
+
         <div class="inputGroup">
             <label>Main problems</label>
             <div class="checkboxGroup">
@@ -26,11 +45,11 @@
                     <label for="battery">🔋 Battery Life</label>
                 </div>
                 <div class="checkboxItem" onclick="toggleCheckbox(this)">
-                    <input type="checkbox" id="battery" value="battery">
+                    <input type="checkbox" id="performance" value="performance">
                     <label for="battery">⚡ Performance</label>
                 </div>
                 <div class="checkboxItem" onclick="toggleCheckbox(this)">
-                    <input type="checkbox" id="battery" value="battery">
+                    <input type="checkbox" id="none" value="none">
                     <label for="battery">✅ None</label>
                 </div>
             </div>
@@ -40,5 +59,7 @@
 
         <div class="result" id="result"></div>
     </div>
+    
+    <script src="index.js"></script>
 </body>
 </html>
