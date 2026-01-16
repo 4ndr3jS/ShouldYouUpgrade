@@ -79,7 +79,7 @@ select:focus{
 }
 
 .checkboxItem:hover{
-    border-color: #667eea;
+    border-color: #66b5ea;
     background: #f8f9ff;
 }
 
@@ -91,14 +91,14 @@ select:focus{
 }
 
 .checkboxItem.checked{
-    border-color: #667eea;
+    border-color: #66aaea;
     background: #f8f9ff;
 }
 
 button{
     width: 100%;
     padding: 16px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #fa4e4e;
     color: white;
     border: none;
     border-radius: 10px;
@@ -106,16 +106,17 @@ button{
     font-weight: 600;
     cursor: pointer;
     margin-top: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
 button:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(234, 102, 102, 0.3);
 }
 
 button:active{
     transform: translateY(0);
+    background-color: #e93c3c;
 }
 
 .result{
