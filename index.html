@@ -4,35 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Should You Upgrade?</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <label>Device Type</label>
-        <select id="deviceType">
-            <option value="phone">Phone</option>
-            <option value="pc">PC</option>
-        </select>
-    </div>
-    <div class="inputGroup">
-        <label>Main problems</label>
-        <div class="checkboxGroup">
-            <div class="checkboxItem" onclick="toggleCheckbox(this)">
-                <input type="checkbox" id="battery" value="battery">
-                <label for="battery">🔋 Battery Life</label>
-            </div>
-            <div class="checkboxItem" onclick="toggleCheckbox(this)">
-                <input type="checkbox" id="battery" value="battery">
-                <label for="battery">⚡ Performance</label>
-            </div>
-            <div class="checkboxItem" onclick="toggleCheckbox(this)">
-                <input type="checkbox" id="battery" value="battery">
-                <label for="battery">✅ None</label>
+        <h1>Should You Upgrade?</h1>
+        <p class="subtitle">Make smarter decisions about your tech</p>
+
+        <div class="inputGroup">
+            <label>Device Type</label>
+            <select id="deviceType">
+                <option value="phone">Phone</option>
+                <option value="pc">PC</option>
+            </select>
+        </div>
+        <div class="inputGroup">
+            <label>Main problems</label>
+            <div class="checkboxGroup">
+                <div class="checkboxItem" onclick="toggleCheckbox(this)">
+                    <input type="checkbox" id="battery" value="battery">
+                    <label for="battery">🔋 Battery Life</label>
+                </div>
+                <div class="checkboxItem" onclick="toggleCheckbox(this)">
+                    <input type="checkbox" id="battery" value="battery">
+                    <label for="battery">⚡ Performance</label>
+                </div>
+                <div class="checkboxItem" onclick="toggleCheckbox(this)">
+                    <input type="checkbox" id="battery" value="battery">
+                    <label for="battery">✅ None</label>
+                </div>
             </div>
         </div>
+
+        <button onclick="checkUpgrade()">Check Now</button>
+
+        <div class="result" id="result"></div>
     </div>
-
-    <button onclick="checkUpgrade()">Check Now</button>
-
-    <div class="result" id="result"></div>
 </body>
 </html>
